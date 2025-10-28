@@ -12,8 +12,8 @@ const ContactForm = () => {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [headerRef, headerVisible] = useScrollAnimation(0.2)
-  const [formRef, formVisible] = useScrollAnimation(0.1)
+  const [headerRef, headerVisible] = useScrollAnimation<HTMLDivElement>(0.2)
+  const [formRef, formVisible] = useScrollAnimation<HTMLDivElement>(0.1)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target

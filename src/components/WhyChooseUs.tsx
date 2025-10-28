@@ -3,8 +3,8 @@
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation'
 
 const WhyChooseUs = () => {
-  const [featuresRef, featuresVisible] = useScrollAnimation(0.2)
-  const [statsRef, statsVisible] = useScrollAnimation(0.3)
+  const [featuresRef, featuresVisible] = useScrollAnimation<HTMLDivElement>(0.2)
+  const [statsRef, statsVisible] = useScrollAnimation<HTMLDivElement>(0.3)
   
   const yearsCount = useCountUp(25, 2000, statsVisible)
   const farmersCount = useCountUp(500, 2500, statsVisible)

@@ -4,8 +4,8 @@ import { smoothScrollTo } from '@/utils/smoothScroll'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 const FeaturedProducts = () => {
-  const [headerRef, headerVisible] = useScrollAnimation(0.2)
-  const [gridRef, gridVisible] = useScrollAnimation(0.1)
+  const [headerRef, headerVisible] = useScrollAnimation<HTMLDivElement>(0.2)
+  const [gridRef, gridVisible] = useScrollAnimation<HTMLDivElement>(0.1)
   const products = [
     {
       id: 1,
