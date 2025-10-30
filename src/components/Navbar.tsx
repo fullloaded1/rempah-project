@@ -35,7 +35,7 @@ const Navbar = () => {
             <h1 className={`font-heading text-xl lg:text-2xl font-bold transition-all duration-300 transform hover:scale-105 ${
               isScrolled ? 'text-[#2A4031]' : 'text-white'
             }`}>
-              Nusantara Spice Heritage
+              Nusa Terra Spices
             </h1>
           </div>
 

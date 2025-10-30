@@ -9,24 +9,52 @@ const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      name: 'Sumatran Cinnamon',
-      image: '/images/cinnamon.jpg',
-      description: 'Sweet and aromatic bark from the highlands of Sumatra, known for its distinctive warm flavor and therapeutic properties.',
-      origin: 'Sumatra, Indonesia'
-    },
-    {
-      id: 2,
-      name: 'Moluccan Clove',
+      name: 'Cengkeh Lalpari (Cloves)',
       image: '/images/clove.jpg',
       description: 'Hand-picked flower buds from the Spice Islands, delivering intense aroma and the perfect balance of sweetness and warmth.',
       origin: 'Maluku Islands, Indonesia'
     },
     {
-      id: 3,
-      name: 'Lampung Black Pepper',
+      id: 2,
+      name: 'Lada Hitam (Black Pepper)',
       image: '/images/pepper.jpg',
-      description: 'Bold and pungent peppercorns from Lampung province, offering a sharp heat that enhances any culinary creation.',
-      origin: 'Lampung, Indonesia'
+      description: 'Bold and pungent peppercorns offering a sharp heat that enhances any culinary creation.',
+      origin: 'Indonesia'
+    },
+    {
+      id: 3,
+      name: 'Kayu Manis (Cinnamon)',
+      image: '/images/cinnamon.jpg',
+      description: 'Sweet and aromatic bark known for its distinctive warm flavor and therapeutic properties.',
+      origin: 'Indonesia'
+    },
+    {
+      id: 4,
+      name: 'Pala (Nutmeg)',
+      image: '/images/nutmeg.jpg',
+      description: 'Premium nutmeg with warm, sweet, and slightly spicy flavor, perfect for both sweet and savory dishes.',
+      origin: 'Indonesia'
+    },
+    {
+      id: 5,
+      name: 'Kapulaga (Cardamom)',
+      image: '/images/cardamom.jpg',
+      description: 'Aromatic pods with a complex flavor profile, adding depth to both traditional and modern cuisine.',
+      origin: 'Indonesia'
+    },
+    {
+      id: 6,
+      name: 'Kulit Pala (Mace)',
+      image: '/images/mace.jpg',
+      description: 'The delicate outer covering of nutmeg, offering a more subtle and refined flavor.',
+      origin: 'Indonesia'
+    },
+    {
+      id: 7,
+      name: 'Lada Putih (White Pepper)',
+      image: '/images/white-pepper.jpg',
+      description: 'Milder than black pepper with a distinct earthy flavor, ideal for light-colored dishes and sauces.',
+      origin: 'Indonesia'
     }
   ]
 
@@ -52,7 +80,7 @@ const FeaturedProducts = () => {
         {/* Products Grid */}
         <div 
           ref={gridRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10"
         >
           {products.map((product, index) => (
             <div

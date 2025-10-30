@@ -28,12 +28,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight animate-fade-in-up">
-          The Soul of Indonesian Spices,{' '}
-          <span className="text-[#D97706] animate-fade-in-up animate-delay-200">Delivered Globally</span>
+          Nusa Terra Spices
         </h1>
         
-        <p className="text-lg sm:text-xl lg:text-2xl mb-8 font-light leading-relaxed max-w-3xl mx-auto opacity-90 animate-fade-in-up animate-delay-300">
-          Your trusted partner for premium, ethically-sourced spices directly from the archipelago's heart.
+        <p className="text-lg sm:text-xl lg:text-2xl mb-4 font-light leading-relaxed max-w-3xl mx-auto opacity-90 animate-fade-in-up animate-delay-200">
+          <span className="text-[#D97706] font-semibold">Connecting Indonesia's finest spices with the world</span>
+        </p>
+        
+        <p className="text-base sm:text-lg lg:text-xl mb-8 font-light leading-relaxed max-w-3xl mx-auto opacity-80 animate-fade-in-up animate-delay-300">
+          Bringing you the authenticity and excellence of Indonesian spices while upholding environmental sustainability and the cultural essence of the archipelago.
         </p>
 
         <button
